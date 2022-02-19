@@ -1,3 +1,126 @@
-p {
-    color: salmon;
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* === HEADER === */
+
+header {
+    background: black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cabecera {  /* Elemento Padre de los div-cabecera */
+    background: rgb(33, 35, 116);
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divs-cabecera {
+    background: salmon;
+    padding: 10px;
+    /*margin: 0 10px;*/
+    display: inline-block;
+}
+
+.logo, .rrss {
+    width: 10%;
+}
+
+.titulo {
+    width: 75%;
+}
+
+nav {  /* Elemento Padre del div menú */
+    background: orangered;
+    padding: 10px 0;
+    display: flex;
+    margin-top: 10px;
+}
+
+.menu {
+    background: orange;
+    padding: 10px;
+    margin: 0 10px;
+    display: block;
+    width: 100%;
+}
+
+
+/* === MAIN === */
+
+main { /* Elemento Padre de Noticias y Aside */
+    background: black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.noticias {  /* Article Padre de noticia y last-section */
+    background: rgb(33, 35, 116);
+    padding: 10px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.noticia {
+    background: blue;
+    width: 48%;
+    margin-bottom: 10px;
+    padding: 10px;    
+    display: inline-block;  
+}
+
+.last-section {
+    background: rgb(80, 80, 255);
+    width: 100%;   
+    margin-bottom: 0px;
+}
+
+aside {
+    background: rgb(228, 17, 69);
+    width: 25%;
+    margin-left: 10px;
+    padding: 10px;
+    display: inline-block;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.seccion-der {
+    width: 100%;
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    display: flex;
+}
+
+
+/* === FOOTER === */
+
+footer {
+    background: black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.div-footer {
+    background-color: yellowgreen;
+    padding: 10px;
 }
